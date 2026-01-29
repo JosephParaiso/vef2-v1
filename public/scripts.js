@@ -1,4 +1,10 @@
 /* útfæra */
+document.querySelectorAll(".question").forEach((section) => {
+  section.addEventListener("click", (e) => {
+    console.log("clicked section", section);
+    section.dataset.answered = "true";
+  });
+});
 
 const correctElement = document.querySelector('.counter .correct');
 const incorrectElement = document.querySelector('.counter .incorrect');

@@ -61,13 +61,13 @@ async function main() {
   const litArtQ1Questions = parseCatAndQual(
     questions,
     "3",
-    "3",
+    "1",
     MAX_QUESTIONS_PER_CATEGORY,
   );
   const litArtQ2Questions = parseCatAndQual(
     questions,
     "3",
-    "3",
+    "2",
     MAX_QUESTIONS_PER_CATEGORY,
   );
   const litArtQ3Questions = parseCatAndQual(
@@ -105,13 +105,13 @@ async function main() {
   const geoQ2Questions = parseCatAndQual(
     questions,
     "5",
-    "1",
+    "2",
     MAX_QUESTIONS_PER_CATEGORY,
   );
   const geoQ3Questions = parseCatAndQual(
     questions,
     "5",
-    "1",
+    "3",
     MAX_QUESTIONS_PER_CATEGORY,
   );
 
@@ -124,13 +124,13 @@ async function main() {
   const entQ2Questions = parseCatAndQual(
     questions,
     "6",
-    "1",
+    "2",
     MAX_QUESTIONS_PER_CATEGORY,
   );
   const entQ3Questions = parseCatAndQual(
     questions,
     "6",
-    "1",
+    "3",
     MAX_QUESTIONS_PER_CATEGORY,
   );
 
@@ -143,13 +143,13 @@ async function main() {
   const sportsQ2Questions = parseCatAndQual(
     questions,
     "7",
-    "1",
+    "2",
     MAX_QUESTIONS_PER_CATEGORY,
   );
   const sportsQ3Questions = parseCatAndQual(
     questions,
     "7",
-    "1",
+    "3",
     MAX_QUESTIONS_PER_CATEGORY,
   );
 

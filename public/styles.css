@@ -1,9 +1,99 @@
 /* útfæra */
-.questions {
-    display: flex;
-    flex-direction: column;
+body {
+  background: #f4f6f8;
+  color: #1f2933;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.5;
+  max-width: 900px;
+  margin-inline: auto;
 }
 
-.hidden {
-    display: none;
+.counter {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
 }
+
+.counter > div {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.counter .correct {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.counter .incorrect {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.questions {
+  display: grid;
+  gap: 1rem;
+}
+
+.question {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.question:hover {
+  transform: scale(1.05);
+}
+
+.question h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.question p {
+  margin: 0.75rem 0 0.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.question[data-answered="false"] .hidden {
+  display: none;
+}
+
+.question[data-answered="true"] .hidden {
+  display: block;
+}
+
+.button {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.button-correct {
+  background: #22c55e;
+  color: white;
+}
+
+.button-incorrect {
+  background: #ef4444;
+  color: white;
+}
+
+.button:hover {
+  filter: brightness(0.95);
+}
+
+.question[data-answered="true"] {
+  background: #f9fafb;
+  cursor: default;
+}
+
