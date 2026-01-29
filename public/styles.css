@@ -1,1 +1,9 @@
 /* útfæra */
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}

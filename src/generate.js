@@ -161,7 +161,7 @@ async function main() {
   const genQ2QuestionsHtml = genQ2Questions
     .map(generateQuestionHtml)
     .join("\n");
-  const genQ3QuestionsHtml = genQ2Questions
+  const genQ3QuestionsHtml = genQ3Questions
     .map(generateQuestionHtml)
     .join("\n");
 

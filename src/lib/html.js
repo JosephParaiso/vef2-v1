@@ -4,6 +4,7 @@ export function generateIndexHtml() {
       <html>
       <head>
         <script src="scripts.js" type="module"></script>
+        <link rel="stylesheet" href="styles.css" />
       </head>
       <body>
         <h1>Spurningaleikur!</h1>
@@ -26,9 +27,9 @@ export function generateIndexHtml() {
 export function generateQuestionHtml(q) {
   const html = /* HTML */ ` <section class="question" data-answered="false">
     <h3>${q.question}</h3>
-    <p>${q.answer}</p>
-    <button type="button" class="button button-correct">Rétt 🫡</button>
-    <button type="button" class="button button-incorrect">Rangt 🥹</button>
+    <p class="hidden">${q.answer}</p>
+    <button type="button" class="button button-correct hidden">Rétt 🫡</button>
+    <button type="button" class="button button-incorrect hidden">Rangt 🥹</button>
   </section>`;
 
   return html;
@@ -39,6 +40,7 @@ export function generateQuestionCategoryHtml(title, questionsHtml) {
     <html>
       <head>
         <script src="scripts.js" type="module"></script>
+        <link rel="stylesheet" href="styles.css" />
       </head>
       <body>
         <h1>Spurningaleikur!</h1>

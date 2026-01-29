@@ -10,7 +10,8 @@ if (!correctElement || !incorrectElement) {
 function questionAnswerHandler(e) {
     const button = e.target;
 
-    const isCorrect = button.classList.contains('button-correct')
+    const isCorrect = button.classList.contains('button-correct');
+    const isIncorrect = button.classList.contains('button-incorrect');
     const parentQuestion = button.closest('.question');
 
     console.log(button,parentQuestion)
@@ -27,6 +28,15 @@ function questionAnswerHandler(e) {
 
         correctElement.textContent = updatedCorrect.toString();
 
+    }
+
+    if (isIncorrect) {
+        const currentIncorrectText = incorrectElement.textContent;
+        const currentIncorrect = Number.parseInt(currentIncorrectText ?? '0');
+
+        const updatedIncorrect = currentIncorrect + 1;
+
+        incorrectElement.textContent = updatedIncorrect.toString();
     }
 
 }
